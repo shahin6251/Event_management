@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizers</title>
+  <link rel="stylesheet" href="MainStyle.css">
+</head>
+<body>
+  <header>
+    <h1 id="event-title">Organizers</h1>
+    <a href="Mainpage.html" style="color:white; text-decoration:underline;">← Back to Events</a>
+  </header>
+
+  <main>
+    <ul id="organizer-list" class="organizer-list"></ul>
+  </main>
+
+  <script>
+    // Get event type from URL
+    const params = new URLSearchParams(window.location.search);
+    const eventType = params.get("event");
+
+    document.getElementById("event-title").innerText = eventType + " Organizers";
+
+    // Example organizers data
+    const organizers = {
+      "Marriage": ["Elegant Weddings Co.", "Forever Together Planners", "Royal Events"],
+      "Birthday": ["Happy Moments", "Cake & Fun Planners", "Party Time"],
+      "Corporate": ["BizMeet Solutions", "ProCorp Events", "Executive Planners"],
+      "Concert": ["Stage Masters", "Live Beats", "SoundWave Events"],
+      "Festival": ["Cultural Vibes", "JoyFest Planners", "Celebration Crew"]
+    };
+
+    const list = document.getElementById("organizer-list");
+    if (organizers[eventType]) {
+      organizers[eventType].forEach(org => {
+        const li = document.createElement("li");
+        li.textContent = org;
+        list.appendChild(li);
+      });
+    } else {
+      list.innerHTML = "<li>No organizers found.</li>";
+    }
+  </script>
+</body>
+</html>

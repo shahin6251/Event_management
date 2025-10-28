@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Order</title>
+  <link rel="stylesheet" href="place-order.css">
+</head>
+<body>
+  <header>
+    <h1>Place Your Order</h1>
+    <a href="organizer-view.html" class="backBtn">← Back to Profile</a>
+  </header>
+
+  <main>
+    <form id="orderForm">
+      <label for="eventType">Event Type:</label>
+      <input type="text" id="eventType" name="eventType" required>
+
+      <label for="date">Event Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="details">Additional Details:</label>
+      <textarea id="details" name="details" rows="4"></textarea>
+
+      <label for="customerName">Your Name:</label>
+      <input type="text" id="customerName" name="customerName" required>
+
+      <label for="customerContact">Your Contact:</label>
+      <input type="text" id="customerContact" name="customerContact" required>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById("orderForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Order submitted successfully!");
+      window.location.href = "organizer-view.html";
+    });
+  </script>
+</body>
+</html>

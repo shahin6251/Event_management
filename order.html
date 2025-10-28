@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Orders</title>
+  <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+  <header>
+    <h1>Customer Orders</h1>
+    <a href="organizer.html" class="backBtn">← Back to Dashboard</a>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Event Type</th>
+          <th>Customer Name</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="orderTableBody">
+        <!-- Orders will be injected here -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="orders.js"></script>
+</body>
+</html>
