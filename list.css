@@ -1,0 +1,128 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.top-header {
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.top-header .logo span {
+  color: #ffd60a;
+}
+
+.backBtn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.backBtn:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2rem;
+  color: #0077b6;
+}
+
+/* Organizer List */
+.org-specializations {
+  margin: 8px 0;
+  padding: 6px 0;
+}
+
+.org-specializations strong {
+  color: #0077b6;
+  font-size: 0.9rem;
+}
+
+.event-types {
+  color: #666;
+  font-size: 0.85rem;
+  background: #e3f2fd;
+  padding: 2px 8px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.org-description {
+  color: #777;
+  font-size: 0.85rem;
+  margin: 6px 0;
+  font-style: italic;
+}
+.organizer-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.organizer-list li {
+  background: #fff;
+  margin: 15px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.organizer-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+.organizer-list img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 2px solid #0077b6;
+}
+
+.organizer-list a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0077b6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.organizer-list a:hover {
+  color: #023e8a;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 15px;
+  background: #0077b6;
+  color: #fff;
+  margin-top: 40px;
+}
