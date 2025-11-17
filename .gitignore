@@ -1,2 +1,31 @@
-/video/
-/img/
+# Ignore video folder
+video/
+**/video/
+
+# Ignore image folder
+image/
+images/
+**/image/
+**/images/
+
+# Ignore upload folder
+upload/
+uploads/
+**/upload/
+**/uploads/
+
+# Common media file types (optional)
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.flv
+
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+
